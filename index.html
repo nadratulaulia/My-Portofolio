@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nadratul Aulia | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#d7baff",
+                        "surface-container": "#eeeeee",
+                        "surface": "#f9f9f9",
+                        "on-primary-fixed-variant": "#573488",
+                        "outline": "#7b7481",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#e4e1ec",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#5f5d66",
+                        "on-tertiary-container": "#464545",
+                        "on-primary-container": "#553387",
+                        "surface-tint": "#6f4ca2",
+                        "primary-fixed": "#eddcff",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#ccc3d2",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "inverse-primary": "#d7baff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#6f4ca2",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f1f1",
+                        "tertiary-container": "#b5b3b3",
+                        "background": "#f9f9f9",
+                        "on-secondary-container": "#65636c",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "inverse-surface": "#2f3131",
+                        "secondary-container": "#e4e1ec",
+                        "on-primary-fixed": "#280056",
+                        "on-surface": "#1a1c1c",
+                        "surface-dim": "#dadada",
+                        "surface-variant": "#e2e2e2",
+                        "primary-container": "#c8a2ff",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "surface-container-low": "#f3f3f4",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#c8c5cf",
+                        "on-background": "#1a1c1c",
+                        "on-surface-variant": "#4a4450",
+                        "surface-container-high": "#e8e8e8",
+                        "on-secondary-fixed-variant": "#47464e",
+                        "on-secondary-fixed": "#1b1b22",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#5f5e5e",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "section-gap": "160px",
+                        "container-max": "1280px",
+                        "stack-md": "16px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Syne"],
+                        "headline-lg": ["Syne"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Syne"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "display-lg": ["Syne"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg": ["84px", { "lineHeight": "90px", "letterSpacing": "-0.04em", "fontWeight": "800" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .blob-1 {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(200, 162, 255, 0.4) 0%, rgba(200, 162, 255, 0) 70%);
+            top: -10%;
+            right: -10%;
+            z-index: -1;
+            border-radius: 50%;
+            filter: blur(40px);
+        }
+        .blob-2 {
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(200, 162, 255, 0.2) 0%, rgba(200, 162, 255, 0) 70%);
+            bottom: -20%;
+            left: -10%;
+            z-index: -1;
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 20px 40px rgba(200, 162, 255, 0.15);
+        }
+        
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-on-surface/10 shadow-[0_20px_40px_rgba(200,162,255,0.15)]">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-on-surface tracking-tighter">Nadratul Aulia</div>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 text-label-sm font-label-sm uppercase tracking-widest hover:text-primary transition-colors duration-300" href="#home">Home</a>
+<a class="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-widest hover:text-primary transition-colors duration-300" href="#about">About</a>
+<a class="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-widest hover:text-primary transition-colors duration-300" href="#experience">Experience</a>
+<a class="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-widest hover:text-primary transition-colors duration-300" href="#projects">Projects</a>
+<a class="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-widest hover:text-primary transition-colors duration-300" href="#skills">Skills</a>
+<a class="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-widest hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<a class="hidden md:inline-flex px-6 py-3 bg-gradient-to-r from-primary-container to-white text-on-primary-container font-label-sm rounded-full shadow-[0_4px_14px_0_rgba(200,162,255,0.39)] hover:shadow-[0_6px_20px_rgba(200,162,255,0.23)] hover:scale-95 transition-all duration-300" href="#contact">Hire Me</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-32 pb-24 overflow-hidden" id="home">
+<div class="blob-1"></div>
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-gutter items-center relative z-10">
+<div class="md:col-span-5 relative">
+<div class="rounded-3xl overflow-hidden glass-panel p-2 transform -rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="Portrait" class="w-full h-auto object-cover rounded-2xl" src="images/aulia_1.jpg"/>
+</div>
+</div>
+<div class="md:col-span-7 relative z-20 -ml-0 md:-ml-24 mt-12 md:mt-0">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mix-blend-difference mb-6">WELCOME TO<br/>MY PORTFOLIO</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-10">UI/UX Designer yang juga berpengalaman sebagai Sekretaris dan administrasi. Saya terbiasa merancang tampilan digital yang intuitif sekaligus mengelola administrasi dan komunikasi dengan rapi</p>
+<a class="inline-flex px-8 py-4 bg-primary text-on-primary font-label-sm rounded-full hover:bg-surface-tint hover:scale-95 transition-all duration-300 items-center gap-2 shadow-lg" href="#projects">
+                    View My Work
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</section><section class="relative py-stack-lg overflow-hidden bg-background" id="about">
+<div class="blob-2"></div>
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative z-10">
+<div class="relative">
+<div class="rounded-3xl overflow-hidden shadow-lg border border-outline-variant">
+<img alt="Nadratl Aulia Portrait" class="w-full h-auto object-cover" src="images/aulia_2.jpg"/>
+</div>
+</div>
+<div class="flex flex-col gap-stack-md">
+<div class="glass-panel p-8 md:p-12 rounded-3xl shadow-[0_20px_40px_rgba(200,162,255,0.15)]">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">About Me</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+         Detail oriented and communicative professional with hands on 
+experience in Health Infomations Management during internship 
+at RSU Kaliwates Jember. Skilled in managing patient documentation, 
+compiling daily to monthly reports, and ensuring accuracy of records 
+for compliance. Active in student organizations as Staff Expert of 
+Cabinet Secretary at BEM, coordinating administrative workflows and 
+document review. Ready to contribute to efficient document control and 
+information management in the Modules Division.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          </p>
+</div>
+</div>
+</div>
+</section>
+<section class="relative py-stack-lg overflow-hidden bg-background" id="experience">
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-10">Professional Experience</h2>
+
+<div class="relative">
+<button id="expPrev" aria-label="Previous experience" class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 md:-ml-6 z-20 glass-panel p-3 rounded-full text-primary hover:scale-110 transition-all duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button id="expNext" aria-label="Next experience" class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-6 z-20 glass-panel p-3 rounded-full text-primary hover:scale-110 transition-all duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-2 md:px-12">
+<div class="glass-panel rounded-3xl p-8 border border-outline-variant flex flex-col gap-6">
+<div class="flex gap-6 items-start">
+<img id="expImg" alt="" class="w-28 h-28 md:w-32 md:h-32 object-cover rounded-2xl flex-shrink-0 border border-outline-variant" src=""/>
+<div>
+<p class="text-primary font-label-sm uppercase tracking-widest mb-2">Position :</p>
+<h3 id="expRole" class="font-headline-md text-headline-md text-on-surface mb-1"></h3>
+<p id="expTitle" class="font-body-md text-body-md text-on-surface-variant"></p>
+</div>
+</div>
+<ol id="expLeftList" class="flex flex-col gap-4 font-body-md text-body-md text-on-surface-variant list-decimal list-inside marker:text-primary marker:font-bold"></ol>
+</div>
+
+<div class="glass-panel rounded-3xl p-8 border border-outline-variant">
+<p class="text-primary font-label-sm uppercase tracking-widest mb-4">Descriptions</p>
+<ol id="expList" class="flex flex-col gap-4 font-body-md text-body-md text-on-surface-variant list-decimal list-inside marker:text-primary marker:font-bold"></ol>
+</div>
+</div>
+
+<div class="flex justify-center gap-2 mt-8" id="expDots"></div>
+<p class="text-center text-label-sm font-label-sm text-on-surface-variant mt-3" id="expCounter"></p>
+</div>
+</div>
+</section>
+
+</section><section class="relative py-stack-lg overflow-hidden bg-background" id="projects">
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-10">Featured Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<a class="group block bg-surface-container-lowest rounded-3xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-500 border border-outline-variant" href="https://www.figma.com/proto/K51yvD5HkeXlnyiqtKj0zt/Digestiva?node-id=2-1690&viewport=-82%2C213%2C0.06&t=cQFeYJWnKW4yC5z4-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A1653&show-proto-sidebar=1&page-id=0%3A1" target="_blank">
+<div class="aspect-video overflow-hidden">
+<img alt="Aurora Ecosystem" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="images/digestiva.jpg"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Digestiva</h3>
+<p class="text-on-surface-variant font-body-md">DIGESTIVA: DIGital Innovation for Gastritis: E-Health System, Treatment & Ingredient VAlue</p>
+<p class="text-on-surface-variant font-body-md">UI/UX Design / Competition Medical Record Electronic</p>
+</div>
+</a>
+<!-- Project Card 2 -->
+<a class="group block bg-surface-container-lowest rounded-3xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-500 border border-outline-variant" href="https://www.figma.com/design/3LCqi9qyWJjgIvKt6gRAw8/Bumiloo?node-id=707-2184&t=FIFjc5BwNwZtObFU-1" target="_blank">
+<div class="aspect-video overflow-hidden">
+<img alt="DocuFlow Pro" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="images/Bumiloo.png"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">BUMILOO</h3>
+<p class="text-on-surface-variant font-body-md">Monitoring Ibu Hamil Praktik Bidan Mandiri</p>
+<p class="text-on-surface-variant font-body-md">UI/UX Design / Academic Project</p>
+</div>
+</a>
+<!-- Project Card 3 -->
+<a class="group block bg-surface-container-lowest rounded-3xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-500 border border-outline-variant" href="https://www.figma.com/proto/6LWYKR2RQXpdAHbGr69Vfr/Mediora?node-id=204-194&p=f&viewport=-79%2C123%2C0.24&t=AaUMbhSeUb2QcKfB-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=204%3A194&show-proto-sidebar=1&page-id=0%3A1" target="_blank">
+<div class="aspect-video overflow-hidden">
+<img alt="Secretary AI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="images/mediora.jpg"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">MEDIORA</h3>
+<p class="text-on-surface-variant font-body-md">Medical Information Organizer & Record App</p>
+<p class="text-on-surface-variant font-body-md">UI/UX Design / Competition Medical Record Electronic</p>
+</div>
+</a>
+<!-- Project Card 4 -->
+<a class="group block bg-surface-container-lowest rounded-3xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-500 border border-outline-variant" href="https://github.com/nadratulaulia/Clinical-Decision-Support-System-CDSS-for-Chronic-Kidney-Disease-Prediction" target="_blank">
+<div class="aspect-video overflow-hidden">
+<img alt="Luxe Portfolio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="images/CDSS.png"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Clinical Decision Support System for Chronic Kidney Disease Prediction</h3>
+<p class="text-on-surface-variant font-body-md">Machine Learning / Academic Project</p>
+</div>
+</a>
+</div>
+</div>
+</section><section class="relative py-stack-lg overflow-hidden bg-background" id="certificates">
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-10">Certificates</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Certificate Card 1 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-lg border border-outline-variant hover:scale-105 transition-all duration-500">
+<div class="aspect-video overflow-hidden">
+<img alt="Certificate of Achievement" class="w-full h-full object-cover" src="images/inagurasi.jpg"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Inagurasi Concert Mahasiswa Baru 2026</h3>
+<p class="text-on-surface-variant font-body-md">Wakil Sekretaris</p>
+</div>
+</div>
+<!-- Certificate Card 2 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-lg border border-outline-variant hover:scale-105 transition-all duration-500">
+<div class="aspect-video overflow-hidden">
+<img alt="Certificate of Achievement" class="w-full h-full object-cover" src="images/BEM.jpg"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Badan Eksekutif Mahasiswa pediode Jan-Des 2026</h3>
+<p class="text-on-surface-variant font-body-md">Staff Ahli Skretaris Kabinet</p>
+</div>
+</div>
+<!-- Certificate Card 3 -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-lg border border-outline-variant hover:scale-105 transition-all duration-500">
+<div class="aspect-video overflow-hidden">
+<img alt="Certificate of Achievement" class="w-full h-full object-cover" src="images/pelatihan.png"/>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Pelatihanan</h3>
+<p class="text-on-surface-variant font-body-md">Project Based Learning Health Innovation Product Showcase</p>
+</div>
+</div>
+</div>
+</div>
+</section><section class="relative py-stack-lg overflow-hidden bg-background" id="skills">
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-10">Skills</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Left Column: Accordions -->
+<div class="flex flex-col gap-4">
+<!-- Administration Accordion -->
+<details class="group glass-panel rounded-2xl overflow-hidden border border-outline-variant">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">folder_managed</span>
+<span class="font-headline-md text-headline-md text-on-surface">Administration</span>
+</div>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6">
+<ol class="flex flex-col gap-2 text-on-surface-variant font-body-md">
+<li class="flex gap-2"><span>1.</span> Microsoft Office (Word, Excel, PowerPoint) </li>
+<li class="flex gap-2"><span>2.</span> Manajemen Dokumen</li>
+<li class="flex gap-2"><span>3.</span> Pengarsipan & Filling</li>
+<li class="flex gap-2"><span>4.</span> Data Entry</li>
+<li class="flex gap-2"><span>6.</span> Time Management</li>
+<li class="flex gap-2"><span>7.</span> Problem Solving</li>
+<li class="flex gap-2"><span>8.</span> Communication skill</li>
+</ol>
+</div>
+</details>
+<!-- Secretary Accordion -->
+<details class="group glass-panel rounded-2xl overflow-hidden border border-outline-variant">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">calendar_month</span>
+<span class="font-headline-md text-headline-md text-on-surface">Secretary</span>
+</div>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6">
+<ol class="flex flex-col gap-2 text-on-surface-variant font-body-md">
+<li class="flex gap-2"><span>1.</span> Meeting Scheduling</li>
+<li class="flex gap-2"><span>2.</span> Email Management</li>
+<li class="flex gap-2"><span>3.</span> Correspondence</li>
+<li class="flex gap-2"><span>4.</span> Calendar Management</li>
+<li class="flex gap-2"><span>5.</span> Time Management</li>
+<li class="flex gap-2"><span>5.</span> Notulensi</li>
+<li class="flex gap-2"><span>5.</span> Komunication efektif</li>
+</ol>
+</div>
+</details>
+<!-- UI/UX Design Accordion -->
+<details class="group glass-panel rounded-2xl overflow-hidden border border-outline-variant">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">design_services</span>
+<span class="font-headline-md text-headline-md text-on-surface">UI/UX Design</span>
+</div>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6">
+<ol class="flex flex-col gap-2 text-on-surface-variant font-body-md">
+<li class="flex gap-2"><span>1.</span> Design system at Figma/Canva</li>
+<li class="flex gap-2"><span>2.</span> Wireframing & Mockup</li>
+<li class="flex gap-2"><span>3.</span> User Research Dasar</li>
+<li class="flex gap-2"><span>4.</span> Empathy</li>
+<li class="flex gap-2"><span>5.</span> Critical thinking</li>
+<li class="flex gap-2"><span>6.</span> Design System</li>
+<li class="flex gap-2"><span>6.</span> Collaboration</li>
+<li class="flex gap-2"><span>6.</span> Strorytelling</li>
+</ol>
+</div>
+</details>
+</div>
+<!-- Right Column: Tools & Languages -->
+<div class="flex flex-col gap-stack-md">
+<div class="glass-panel p-8 rounded-3xl border border-outline-variant">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6">Tools &amp; Technologies</h3>
+<div class="grid grid-cols-3 md:grid-cols-4 gap-4">
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary">description</span>
+<span class="text-label-sm font-label-sm text-center">Word</span>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary">table_chart</span>
+<span class="text-label-sm font-label-sm text-center">Excel</span>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary">grid_on</span>
+<span class="text-label-sm font-label-sm text-center">Sheets</span>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary">article</span>
+<span class="text-label-sm font-label-sm text-center">Docs</span>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary">slideshow</span>
+<span class="text-label-sm font-label-sm text-center">PPT</span>
+</div>
+<!-- Trello -->
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" class="w-6 h-6 object-contain" />
+  <span class="text-label-sm font-label-sm text-center">Trello</span>
+</div>
+
+<!-- GitHub -->
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-6 h-6 object-contain" />
+  <span class="text-label-sm font-label-sm text-center">GitHub</span>
+</div>
+
+<!-- Figma -->
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-6 h-6 object-contain" />
+  <span class="text-label-sm font-label-sm text-center">Figma</span>
+</div>
+
+<!-- Canva -->
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" class="w-6 h-6 object-contain" />
+  <span class="text-label-sm font-label-sm text-center">Canva</span>
+</div>
+
+<!-- MySQL -->
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-6 h-6 object-contain" />
+  <span class="text-label-sm font-label-sm text-center">MySQL</span>
+</div>
+
+<!-- XAMPP -->
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Xampp_logo.svg" alt="XAMPP" class="w-6 h-6 object-contain" />
+  <span class="text-label-sm font-label-sm text-center">XAMPP</span>
+</div>
+
+<!-- VS Code -->
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="w-6 h-6 object-contain" />
+  <span class="text-label-sm font-label-sm text-center">VS Code</span>
+</div>
+
+<div class="flex flex-col items-center gap-2 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant hover:scale-105 transition-transform">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg" alt="Notion Logo" class="w-6 h-6 object-contain" />
+  <span class="text-label-sm font-label-sm text-center">Notion</span>
+</div>
+</div>
+</div>
+<div class="mt-10">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<section class="relative py-stack-lg overflow-hidden bg-background" id="contact">
+<div class="blob-1 opacity-50"></div>
+<div class="blob-2 opacity-30"></div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Let's Connect</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Explore my professional presence or reach out directly for collaborations.</p>
+</div>
+<!-- Smartphone Mockups -->
+<div class="flex flex-col md:flex-row justify-center items-center gap-12 mb-16">
+<a class="group relative transition-transform duration-500 hover:scale-105" href="https://www.instagram.com/nadrtl21?igsi=MWNjYjgxMzl3OW1qdw==">
+<div class="w-[280px] md:w-[320px] shadow-[0_20px_40px_rgba(200,162,255,0.2)] rounded-[3rem] overflow-hidden">
+<img alt="Instagram Profile" class="w-full h-auto" src="images/instagram.png"/>
+</div>
+<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white px-6 py-2 rounded-full shadow-lg border border-primary/10 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-widest">Instagram</span>
+</div>
+</a>
+<a class="group relative transition-transform duration-500 hover:scale-105" href="https://www.linkedin.com/in/nadratul-aulia-166310336?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+<div class="w-[280px] md:w-[320px] shadow-[0_20px_40px_rgba(200,162,255,0.2)] rounded-[3rem] overflow-hidden">
+<img alt="LinkedIn Profile" class="w-full h-auto" src="images/linkedin.png"/>
+</div>
+<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white px-6 py-2 rounded-full shadow-lg border border-primary/10 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-widest">LinkedIn</span>
+</div>
+</a>
+</div>
+<!-- Contact Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+  
+  <!-- KARTU EMAIL -->
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nadratulaulia7@gmail.com" target="_blank" class="glass-panel p-8 rounded-3xl flex items-center gap-6 border border-outline-variant hover:scale-105 transition-transform duration-300 cursor-pointer block text-left decoration-none">
+    <div class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-primary shrink-0">
+      <span class="material-symbols-outlined">mail</span>
+    </div>
+    <div>
+      <p class="text-label-sm font-label-sm text-primary uppercase tracking-widest mb-1">Email</p>
+      <p class="font-headline-md text-body-lg text-on-surface">nadratulaulia7@gmail.com</p>
+    </div>
+  </a>
+
+  <!-- KARTU WHATSAPP -->
+  <a href="https://wa.me/6282279530866" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl flex items-center gap-6 border border-outline-variant hover:scale-105 transition-transform duration-300 cursor-pointer block text-left decoration-none">
+    <div class="w-14 h-14 bg-primary-container rounded-2xl flex items-center justify-center text-primary shrink-0">
+      <span class="material-symbols-outlined">chat</span>
+    </div>
+    <div>
+      <p class="text-label-sm font-label-sm text-primary uppercase tracking-widest mb-1">WhatsApp</p>
+      <p class="font-headline-md text-body-lg text-on-surface">+62 822-7953-0866</p>
+    </div>
+  </a>
+
+</div>
+</div>
+</div>
+</div>
+</section><footer class="w-full py-stack-lg bg-surface-container-low border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-stack-md">
+<div class="font-headline-md text-headline-md text-primary tracking-tighter">Nadratul Aulia</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2026 Nadratul Aulia Portfolio. Designed with precision.</p>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary underline transition-all opacity-100 hover:opacity-80" href="https://www.linkedin.com/in/nadratul-aulia-166310336?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary underline transition-all opacity-100 hover:opacity-80" href="[https://github.com/nadratulaulia](https://github.com/nadratulaulia)">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary underline transition-all opacity-100 hover:opacity-80" href="https://mail.google.com/mail/?view=cm&fs=1&to=nadratulaulia7@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+<script>
+const experiences = [
+  {
+    role: "Internship - Health Information Management Department",
+    title: "RSU Kaliwates Jember",
+    image: "images/intern.jpg",
+    leftPoints: [
+      "Memberikan pelayanan administrasi kepada pasien yang mendaftar di unit rawat inap, rawat jalan, dan IGD.",
+      "Melakukan pengecekan kelengkapan berkas rekam medis pasien dari berbagai poli, dengan rata-rata 20 berkas per hari, memastikan seluruh dokumen sesuai standar rumah sakit."
+    ],
+    rightPoints: [
+      "Mengkoding diagnosis dan tindakan medis berdasarkan ICD-10 dan ICD-9, memastikan akurasi dan kesesuaian dengan standar kesehatan dan berita acara yang berlaku dengan minimal sekitar 20 berkas per hari.",
+      "Menyusun rekapitulasi harian, mingguan, dan bulanan untuk mendukung laporan administrasi rumah sakit.",
+      "Menyeleksi serta mendokumentasikan berkas rekam medis yang sudah non-aktif, mengarsipkan minimal 100 berkas setiap hari secara sistematis dan aman."
+    ]
+  },
+  {
+    role: "Staf Ahli Sekretaris Kabinet BEM",
+    title: "Badan Eksekutif Mahasiswa Politeknik Negeri Jember",
+    image: "images/seskab.jpg",
+    leftPoints: ["Mengatur alur administrasi organisasi mahasiswa di bawah naungan BEM sesuai buku pedoman, serta mensosialisasikan perubahan aturan kepada seluruh organisasi.", "Mengecek dan merevisi proposal kegiatan, laporan pertanggungjawaban, serta surat pengajuan lomba; sekaligus mengelola surat masuk dan keluar (undangan, pemberitahuan, permohonan, MOU, dll.) dengan rata‑rata 5 surat per hari."],
+    rightPoints: ["Merekap seluruh kegiatan organisasi mahasiswa setiap bulan sebagai bahan evaluasi dan laporan resmi BEM.", "Menyelenggarakan program kerja utama seperti Sarasehan (laporan pertanggungjawaban setengah periode/100 hari jabatan) dan RAT (Rapat Anggota Tahunan), serta mengkoordinasi komunikasi antara Presiden Mahasiswa dengan organisasi mahasiswa."]
+  },
+  {
+    role: "Ketua Panitia  Rapat Anggota Tahunan BEM KM Politeknik Negeri Jember",
+    title: "Badan Eksekutif Mahasiswa Politeknik Negeri Jember",
+    image: "images/rat.jpg",
+    leftPoints: ["Perencanaan Kegiatan  Menyusun proposal kegiatan, menentukan tema acara, serta merancang susunan kepanitiaan dan job description untuk memastikan struktur organisasi berjalan efektif.", "Mengkoordinir jalannya acara secara keseluruhan, memastikan setiap divisi bekerja sesuai tugas, dan menjaga kelancaran komunikasi antar panitia."],
+    rightPoints: ["Menyusun Laporan Pertanggungjawaban (LPJ) sebagai dokumentasi resmi hasil kegiatan dan bahan evaluasi untuk periode berikutnya."]
+  },
+  {
+    role: "Juara 3 Lomba Design Interface Rekam Medis Elektronik di Festival Medical Record Electronik",
+    title: "Poltekkes Yogyakarta",
+    image: "images/lomba.jpg",
+    leftPoints: ["Merancang antarmuka aplikasi rekam medis elektronik dengan integrasi AI untuk menyelesaikan permasalahan umum RME, seperti pencarian data pasien, validasi input, dan efisiensi alur kerja tenaga kesehatan", "Melakukan riset pengguna untuk memahami kebutuhan tenaga medis dan pasien dalam penggunaan sistem digital"],
+    rightPoints: ["Mengembangkan konsep desain menggunakan pendekatan Design Thinking dan prototyping dengan Figma ", "Berkolaborasi dengan tim untuk menyusun alur interaksi yang intuitif dan ramah pengguna.","Menghadapi tantangan dalam menggabungkan aspek teknis AI dengan desain yang sederhana dan mudah dipahami, serta berhasil mempresentasikan solusi di depan juri"]
+  },
+  {
+    role: "Wakil Sekretaris Kepanitiaan Inagurasi Maba 2026",
+    title: "Inagurasi Concert Mahasiswa Baru 2026",
+    image: "images/Inagurasi.jpg",
+    leftPoints: ["Menyusun notulensi, absensi rapat, serta mengelola dokumen administrasi seperti sertifikat, MoU, dan surat resmi kegiatan.", "Membuat dan mengatur G‑Form untuk kuesioner, pendaftaran talent, dan UMKM guna mempermudah pengumpulan data peserta dan mitra.","Berkoordinasi dengan lembaga kampus, tamu undangan, juri, dan pihak eksternal untuk memastikan kelancaran pelaksanaan acara."],
+    rightPoints: ["Menyusun SPH/SPB peminjaman tempat, surat balasan, surat peringatan, serta dokumen inventaris UMKM dan kebutuhan acara lainnya.", "Mengatur kehadiran dan konsumsi panitia, peserta, tamu undangan, serta memastikan data presensi tercatat dengan rapi.","Mengelola data UMKM, talent, dan kebutuhan acara, termasuk peminjaman barang dan tempat untuk mendukung kelancaran kegiatan."]
+  },
+  {
+    role: "Anggota Divisi Humas",
+    title: "Young On Top Jember",
+    image: "images/yoters.jpg",
+    leftPoints: ["Mengidentifikasi dan mencatat kebutuhan operasional kegiatan sebagai dasar penyusunan RAB yang akurat.", "Menjalin komunikasi dengan pengurus panti untuk koordinasi kegiatan dan memastikan kebutuhan anak-anak terpenuhi.", "Koordinasi dengan mitra potensial untuk mendukung keberhasilan acara."],
+    rightPoints: ["Menyusun konten media sosial yang informatif dan menarik untuk meningkatkan engagement audiens.", "Menilai kelayakan lokasi kegiatan dengan mencatat fasilitas, potensi hambatan, dan kebutuhan teknis.","Menyusun daftar media partner relevan dan menghubungi pihak terkait untuk kerja sama publikasi acara."]
+  }
+];
+
+let currentExp = 0;
+
+function renderExperience(index) {
+  const exp = experiences[index];
+  document.getElementById('expImg').src = exp.image;
+  document.getElementById('expRole').textContent = exp.role;
+  document.getElementById('expTitle').textContent = exp.title;
+
+  const leftList = document.getElementById('expLeftList');
+  leftList.innerHTML = '';
+  exp.leftPoints.forEach(point => {
+    const li = document.createElement('li');
+    li.textContent = point;
+    leftList.appendChild(li);
+  });
+
+  const rightList = document.getElementById('expList');
+  rightList.innerHTML = '';
+  exp.rightPoints.forEach(point => {
+    const li = document.createElement('li');
+    li.textContent = point;
+    rightList.appendChild(li);
+  });
+
+  document.getElementById('expCounter').textContent = (index + 1) + ' / ' + experiences.length;
+  renderDots(index);
+}
+
+function renderDots(activeIndex) {
+  const dotsContainer = document.getElementById('expDots');
+  dotsContainer.innerHTML = '';
+  experiences.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'h-2.5 rounded-full ' + (i === activeIndex ? 'w-6 bg-primary' : 'w-2.5 bg-outline-variant');
+    dot.addEventListener('click', () => { currentExp = i; renderExperience(currentExp); });
+    dotsContainer.appendChild(dot);
+  });
+}
+
+document.getElementById('expPrev').addEventListener('click', () => {
+  currentExp = (currentExp - 1 + experiences.length) % experiences.length;
+  renderExperience(currentExp);
+});
+
+document.getElementById('expNext').addEventListener('click', () => {
+  currentExp = (currentExp + 1) % experiences.length;
+  renderExperience(currentExp);
+});
+
+renderExperience(currentExp);
+</script>
+</body></html>
